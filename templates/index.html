@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+
+    <head>
+        <link href='https://fonts.googleapis.com/css?family=Raleway:400, 600' rel='stylesheet' type='text/css'>
+        <link href="//maxcdn.bootstrapcdn.com/font-awesome/4.1.0/css/font-awesome.min.css" rel="stylesheet">
+        <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='style.css') }}">
+
+    </head>
+
+    <body>
+
+    <div class="menu">
+
+      <!-- Menu icon -->
+      <div class="icon-close">
+        <img src="http://s3.amazonaws.com/codecademy-content/courses/ltp2/img/uber/close.png">
+      </div>
+
+      <!-- Login Menu -->
+      <ul>
+        <li><a href="/stock_chart">Live Stocks</a></li>
+        <li><a href="#">My Stocks</a></li>
+        <li><a href="#">Markets</a></li>
+        <li><a href="#">Trades</a></li>
+      </ul>
+    </div>
+        <!-- STOCK TICKER 1 -->
+    <div id="Stocks">
+  <marquee scrollamount="15">
+      <span class="Symbol">
+    <i data-replace='StockExchange'>NASDAQ</i> :<b class="Stat"><i data-replace='Symbol'> GOOG</i></b>
+    <b class="Label">( <i data-replace='Name'>Alphabet Inc.</i> )</b>
+  </span>
+  <span class="Price"><b class="Label">Live Price</b> <b class="Stat">$<i data-replace='BidRealtime'></i></b></span>
+  <span class="Change"><b class="Label">Change</b> <b class="Stat"><i data-replace='Change'></i></b> <b class="Stat">(<i data-replace='ChangeinPercent'></i>)</b></span>
+  <span class="Volume"><b class="Label">Volume</b> <b class="Stat" data-replace='Volume'></b></span>
+  <span class="MarketCapitalization"><b class="Label">MKT CAP</b> <b class="Stat">$<i data-replace="MarketCapitalization"></i></b></span>
+  <span class="LastUpdated"><b class="Label">Last Trade</b> <b class="Stat"><i data-replace='LastTradeDate'></i> <i data-replace="LastTradeTime"></i> </b></span>
+</marquee></div>
+<div id="Stocks">
+<!--STOCK TICKER 2-->
+  <marquee direction="right" scrollamount="13">
+<span class="Symbol"><i data-replace='StockExchange'>NASDAQ </i>:<b class="Stat"><i data-replace='Symbol'> AAPL</i></b>
+    <b class="Label">( <i data-replace='Name'>Apple Inc.</i> )</b>
+  </span>
+  <span class="Price2"><b class="Label">Live Price</b></span>
+  <span class="Change2"><b class="Label">Change</b> <b class="Stat"><i data-replace='Change2'></i></b> <b class="Stat">(<i data-replace='ChangeinPercent'></i>)</b></span>
+  <span class="Volume2"><b class="Label">Volume</b> <b class="Stat" data-replace='Volume2'></b></span>
+  <span class="MarketCapitalization2"><b class="Label">Mkt Cap</b> <b class="Stat">$<i data-replace="MarketCapitalization2"></i></b></span>
+  <span class="LastUpdated"><b class="Label">Last Trade</b> <b class="Stat"><i data-replace='LastTradeDate'></i> <i data-replace="LastTradeTime"></i> </b></span>
+</marquee></div>
+        <div class="jumbotron">
+        <div class="icon-menu">
+        <i class="fa fa-bars" style="color: deepskyblue"></i>
+        Menu
+      </div>
+<!-Using jQuery for responsive menu -->
+    <script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+            <!--Connecting javascript file to html-->
+    <script src="{{ url_for('static', filename='script.js') }}"></script>
+            <div class="container">
+                <div id="main">
+                     <h1>Bull
+                         <br />On
+                         <br />Wall ST.
+                     </h1>
+
+                    <!-- <a id="btn-primary" href="stock_chart.html">Get started</a> -->
+                </div>
+            </div>
+        </div>
+
+        <div class="supporting">
+            <div class="container">
+                <div class="col">
+
+                     <h2>Buy</h2>
+                    <p>Make your projects look great and interact beautifully.</p>
+                    <!--
+                     <a class="btn-default" href="#">Start</a> -->
+                </div>
+                <div class="col">
+
+                     <h2>Sell</h2>
+                    <p>Use modern tools to turn your design into a web site</p>
+                    <!--
+                     <a class="btn-default" href="#">Start</a> -->
+                </div>
+                <div class="col">
+
+                     <h2>Watch</h2>
+                    <p>Use modern tools to turn your design into a web site</p>
+                    <!--
+                     <a class="btn-default" href="#">Start</a> -->
+                </div>
+            </div>
+            <div class="clearfix"></div>
+        </div>
+
+        <div class="footer">
+            <div class="container">
+                <p>&copy; Derek Afriyie 2016</p>
+</html>

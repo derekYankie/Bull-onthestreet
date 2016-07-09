@@ -1,0 +1,344 @@
+html, body {
+    margin: 0;
+    padding: 0;
+}
+/* Initial menu */
+.menu {
+  background: #202024 url('http://www.wherecoolthingshappen.com/wp-content/uploads/2013/04/new-york-central-park-from-above.jpg') repeat left top;
+  left: -285px;  /* start off behind the scenes */
+  height: 100%;
+  position: fixed;
+  width: 285px;
+}
+
+.menu ul {
+  border-top: 1px solid #636366;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.menu li {
+  border-bottom: 1px solid #636366;
+  font-family: 'Open Sans', sans-serif;
+  line-height: 45px;
+  padding-bottom: 3px;
+  padding-left: 20px;
+  padding-top: 3px;
+}
+
+.menu a {
+  color: #fff;
+  font-size: 27px;
+  text-decoration: none;
+  text-transform: uppercase;
+}
+
+.icon-close {
+  cursor: pointer;
+  padding-left: 10px;
+  padding-top: 170px;
+}
+
+.icon-menu {
+  color: #fff;
+  cursor: pointer;
+  font-family: 'Open Sans', sans-serif;
+  font-size: 26px;
+  padding-bottom: 25px;
+  padding-left: 45px;
+  padding-top: 25px;
+  text-decoration: none;
+  text-transform: uppercase;
+}
+
+.icon-menu i {
+  margin-right: 5px;
+}
+.container {
+    max-width: 940px;
+    margin: 0 auto;
+    padding: 0 10px;
+}
+.container2 {
+    max-width: 940px;
+    margin: 0 auto;
+    padding: 0;
+}
+.nav2 {
+    color: #fff;
+    text-align:center;
+    margin: 0;
+    padding: 20px 0;
+}
+.jumbotron {
+    background: url("https://c1.staticflickr.com/9/8794/17086570218_70271813b1_b.jpg");
+    display:no-repeat;
+    position: center center;
+    background-size: cover;
+    height: 800px;
+}
+/* Background image on stock chart page*/
+.jumbotron2 {
+    background: url("https://static.pexels.com/photos/1139/black-and-white-city-skyline-buildings.jpg");
+    display:no-repeat;
+    position: center center;
+    background-size: cover;
+    height: 900px;
+}
+.header {
+    background-color: #333;
+}
+#main {
+    position: relative;
+    top: 180px;
+    text-align: center;
+}
+#main h1 {
+    color: #fff;
+    font-family:'Raleway', sans-serif;
+    font-weight: 600;
+    font-size: 100px;
+    margin-top: 0;
+    margin-bottom: 80px;
+    text-transform: uppercase;
+}
+#btn-primary {
+    background-color: #333;
+    color: #fff;
+    font-family:'Raleway', sans-serif;
+    font-weight: 600;
+    font-size: 18px;
+    letter-spacing: 1.3px;
+    padding: 16px 40px;
+    text-decoration: none;
+    text-transform: uppercase;
+    /*Adds a shadow to the button*/
+    box-shadow:7px 3px 0px 0px #2b2a2a;
+}
+.btn-default {
+    border: 1px solid #333;
+    color: #333;
+    font-family:'Raleway', sans-serif;
+    font-weight: 600;
+    font-size: 10px;
+    letter-spacing: 1.3px;
+    padding: 10px 20px;
+    text-decoration: none;
+    text-transform: uppercase;
+    display: inline-block;
+    margin-bottom: 20px;
+}
+/* Button on Stock Chart page */
+.btn-default2 {
+    border: 1px solid #fff;
+    color: #fff;
+    font-family:'Raleway', sans-serif;
+    font-weight: 600;
+    font-size: 10px;
+    letter-spacing: 1.3px;
+    padding: 10px 20px;
+    text-decoration: none;
+    text-transform: uppercase;
+    display: inline-block;
+    margin-bottom: 20px;
+}
+
+/* Yahoo finance list */
+
+.stock_lst li{
+     display:inline;
+}
+
+
+/*Stock stuff*/
+
+#Stocks {
+  display: block;
+  /*margin:5px;*/
+  border: 2px solid deepskyblue;
+  min-height: 1em;
+  background: #171E2E;
+  color: #FFF;
+  padding: 20px;
+  vertical-align: middle;
+  line-height: 1.4;
+  text-align: center;
+  transform: translateZ(0);
+  cursor: pointer;
+  font-size: 20px;
+  font-family: "Roboto", Helvetica;
+  animation-play-state: paused;
+}
+
+#Stocks b { font-weight: 300; }
+#Stocks i { font-style: normal; }
+
+#Stocks .Name,
+#Stocks .Label,
+#Stocks .LastUpdated { font-size: 0.7em; line-height: 1; }
+
+#Stocks span {
+  white-space: nowrap;
+  display: inline-block;
+  padding: 0 5px;
+}
+//#Stocks span { display: block; }
+
+#Stocks .Symbol,
+#Stocks .Stat { color: #88bd0a; }
+
+
+/* ------------Line Graph Style------------------ */
+#mychart {
+  font: 10px sans-serif;
+  width:200px;
+  height:200px;
+}
+
+.axis path,
+.axis line {
+  fill: none;
+  stroke: #000;
+  shape-rendering: crispEdges;
+}
+
+.grid path,
+.grid line {
+  fill: none;
+  stroke: rgba(0, 0, 0, 0.25);
+  shape-rendering: crispEdges;
+}
+
+.x.axis path {
+  display: none;
+}
+
+.line {
+  fill: none;
+  stroke-width: 2.5px;
+}
+
+
+/* -----------Stock YQL------------------- */
+div.indices {
+		font: 12px/19px Helvetica, Arial, sans-serif;
+		width: 825px;
+		margin: 0 auto;
+	}
+.divgreen {
+		color: #000;
+		float: left;
+		background-color: #70DB70;
+		border-right: 3px solid #FFF;
+		padding: 3px;
+	}
+.divred {
+		color: #000;
+		float: left;
+		background-color: #f7cdc2;
+		border-right: 3px solid #FFF;
+		padding: 3px;
+	}
+/* Animations */
+#Stocks span { animation: none; }
+
+#Stocks.is-Visible span {
+  opacity: 0;
+  transform: translate(0,-1em) translateZ(0);
+  animation-name: slide-in;
+  animation-duration: 500ms;
+  animation-timing-function: ease-in-out;
+  animation-fill-mode: forwards;
+}
+
+#Stocks.is-Loading.is-Visible span {
+  opacity: 1;
+  transform: translateZ(0);
+  animation-name: slide-out;
+  animation-fill-mode: forwards;
+}
+
+#Stocks.is-Loaded.is-Visible span {
+  opacity: 0;
+  transform: translate(0,-1em);
+  animation-name: slide-in;
+  animation-fill-mode: forwards;
+}
+
+@iterations: 10;
+.nthDelay(@index) when (@index > 0) {
+  #Stocks span:nth-child(@{index}) {
+    @speed: (@index * 200);
+    animation-delay: ~"@{speed}ms";
+	}
+	.nthDelay((@index - 1));
+}
+.nthDelay(@iterations);
+
+@keyframes slide-in {
+  0% {
+    opacity: 0;
+    transform: translate(0,-1em);
+  }
+	100% {
+    opacity: 1;
+    transform: translate(0,0);
+  }
+}
+@keyframes slide-out {
+  0% {
+    opacity: 1;
+    transform: translate(0,0);
+  }
+  100% {
+    opacity: 0;
+    transform: translate(0,1em);
+  }
+}
+
+.no-js #Stocks { display: none; }
+
+@media (min-width:720px) {
+    .btn-default {
+        padding: 15px 50px;
+    }
+}
+.supporting {
+    padding-top: 80px;
+    padding-bottom: 100px;
+}
+.supporting .col {
+    float: left;
+    width: 33%;
+    font-family:'Raleway', sans-serif;
+    text-align: center;
+}
+.supporting img {
+    height: 32px;
+}
+.supporting h2 {
+    font-weight: 600;
+    font-size: 23px;
+    text-transform: uppercase;
+}
+.supporting p {
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 20px;
+    padding: 0 50px;
+    margin-bottom: 40px;
+}
+.clearfix {
+    clear: both;
+}
+.footer {
+    background-color: #333;
+    color: #fff;
+    padding: 30px 0;
+}
+.footer p {
+    font-family:'Raleway', sans-serif;
+    text-transform: uppercase;
+    font-size: 16px;
+}

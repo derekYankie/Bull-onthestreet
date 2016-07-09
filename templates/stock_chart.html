@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width">
+  <title>Stock Charts</title>
+  <script type="text/javascript" src="chrome-extension://bfbmjmiodbnnpllbbbfblcplfjjepjdn/js/injected.js"></script>
+  <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='style.css') }}">
+    <!--
+    <link href="style.css" rel="stylesheet">
+    -->
+</head>
+<body>
+<script src="https://code.jquery.com/jquery-1.11.1.min.js"></script>
+<script src="{{ url_for('static', filename='script.js') }}"></script>
+<script src="http://code.highcharts.com/stock/highstock.js"></script>
+<script src="http://code.highcharts.com/stock/modules/exporting.js"></script>
+<!--
+<script src="script.js"></script>
+-->
+  <div class="header">
+            <div class="container2">
+                <ul class="nav2">
+                    <h2>Live Market Data of Apple stock from Yahoo Finance API JSON &amp; jQuery</h2>
+                     <!--Home page button-->
+                    <a class="btn-default2" href="/">Home</a>
+                </ul>
+            </div>
+        </div>
+
+        <div class="jumbotron2">
+            <div class="container">
+                <div class="main">
+                     <!--Stok ticker pulling Yahoo finance api-->
+  <div class="stock_lst">
+  <marquee>
+   <ul>
+  <li id="symbol">Symbol:</li>
+  <li id="result">Live Price: </li>
+  <li id="time">Valid Time: </li>
+  <li id="change">Change: </li>
+  <li id="percent">Percent: </li>
+    </ul>
+  </marquee>
+ </div>
+ <br>
+
+<!--My graphs-->
+<div id="stock_chart1" style="height: 400px; min-width: 310px"></div>
+<br>
+<div id="stock_chart2" style="height: 400px; min-width: 310px"></div>
+
+                </div>
+            </div>
+        </div>
+   </div>
+            <div class="clearfix"></div>
+        </div>
+
+        <div class="footer">
+            <div class="container">
+                <p>&copy; Derek Afriyie 2016</p>
+            </div>
+</body>
+</html>
